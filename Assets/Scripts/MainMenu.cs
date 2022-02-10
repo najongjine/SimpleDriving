@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private int energyRechargeDuration;
 
     [SerializeField] private AndroidNotificationHandler androidNotificationHandler;
+    [SerializeField] private IOSNotificationHandler iosNotificationHandler;
 
     private int energy;
 
@@ -55,7 +56,11 @@ public class MainMenu : MonoBehaviour
 
 #if UNITY_ANDROID
             androidNotificationHandler.ScheduleNotification(energyReady);
+#elif UNITY_IOS
+            iosNotificationHandler.ScheduleNotification(energyRechargeDuration);
 #endif
+
+
         }
 
         SceneManager.LoadScene(1);
