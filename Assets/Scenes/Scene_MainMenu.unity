@@ -398,10 +398,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1264512233}
   energyText: {fileID: 668063927}
-  maxEnergy: 5
-  energyRechargeDuration: 1
+  playButton: {fileID: 1387574236}
   androidNotificationHandler: {fileID: 907973316}
   iosNotificationHandler: {fileID: 907973315}
+  maxEnergy: 5
+  energyRechargeDuration: 1
 --- !u!114 &907973315
 MonoBehaviour:
   m_ObjectHideFlags: 0
